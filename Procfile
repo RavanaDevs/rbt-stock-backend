@@ -1,1 +1,1 @@
-web:node nodemon src/server.ts
+web:npm start
