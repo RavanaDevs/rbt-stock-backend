@@ -1,5 +1,5 @@
 import express, { NextFunction, Request, Response } from "express";
-
+import "dotenv/config";
 import home from "./routes/home";
 import badRequest from "./middlewares/bad-request";
 
