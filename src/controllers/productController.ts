@@ -7,7 +7,7 @@ import product, {
 export const getAllProducts: RequestHandler = async (req, res, next) => {
   try {
     const notes = await product.find().exec();
-    res.status(200).json(notes);
+    return res.status(200).json(notes);
     
   } catch (error) {
     next(error);
