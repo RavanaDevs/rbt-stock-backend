@@ -10,7 +10,9 @@ import productRouter from "./routes/product";
 const app = express();
 
 app.use(express.json());
+
 app.use(cors());
+
 
 app.use("/", home);
 app.use("/products", productRouter);
