@@ -5,6 +5,7 @@ import product, {
 } from "../models/product";
 
 export const getAllProducts: RequestHandler = async (req, res, next) => {
+  console.log(req.body.user);
   try {
     const notes = await product.find().exec();
     return res.status(200).json(notes);
