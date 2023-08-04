@@ -6,6 +6,7 @@ import home from "./routes/home";
 import badRequest from "./middlewares/bad-request";
 
 import productRouter from "./routes/product";
+import userRouter from "./routes/users";
 
 const app = express();
 
@@ -13,9 +14,9 @@ app.use(express.json());
 
 app.use(cors());
 
-
 app.use("/", home);
 app.use("/products", productRouter);
+app.use("/users", userRouter);
 
 // undefined endpoint
 app.use(badRequest);
